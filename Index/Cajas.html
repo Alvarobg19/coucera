@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="todos los tipos de estilos">
+	<meta name="keywords" content="estilos">
+<!-- Etiqueta Style, cambia el color a todos los li. Cuelga de un CSS externo -->
+	<style>
+		@import 'CSS1/import.css';
+	</style>
+<!-- Etiqueta style, cambia el color a todos los h2 (interno) -->	
+	<style>
+		h2{color:green;}
+	</style>
+<!-- Etiqueta link, cambia el color y esta en un CSS externo -->	
+	<link href="CSS1/estilo.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<h1 style="color:red">TODO ES UNA CAJA</h1>
+	<p>Uno de los conceptos mas importantes que debemos recordar a la hora de eleaborar CSS es que todos y cada uno de los elementos de mi pagina web son cajas
+	<p> Eso exactamente, ¿que significa?. Significa que todos los elementos que representan algo en HTML tiene la siguiente estructura visual:	
+	</p>
+	Con este modelo debemos por lo tanto distinguir la siguientes zonas:
+	
+	<img src="imagenes/modelocaja.PNG" alt="" title="Modelo de cajas">
+<!-- El CSS externo se ejecuta aquí -->
+	<ul>
+		<li>El contenido que es lo mas "importante", el texto en las etiquetas de texto, la imagen en las etiquetas de imagen etc..
+		<li>El padding que es la distancia que existe entre el contenido y el borde de la hoja.
+		<li>El borde que es el elemento que marca la division entre el elemento y el resto de los elementos de la pagina.
+		<li>El margen que es la distancia entre el elemento y el resto de los elementos de la pagina.	
+	</ul>
+<!-- Aquí se ejecuta la etiqueta style del head (interno)-->
+	<h2>Comportamiento de una caja (Estilos con la etiqueta style)</h2>
+	<p>Los elementos en bloque son elementos que, independientemente de la anchura que tengan, se separan verticalmente de los elementos anteriores y posteriores. </p>
+	<p>Es como si "provocaran" un salto de linea antes y uno después (figuradamente hablando). </p>
+	<p>En cambio, los elementos en línea se van sucediendo a lo largo de la misma línea, mientras caben, uno detras de otro y de izquierda a derecha (al menos en nuestro idioma) Cuando no caben pasan a la siguiente linea. Digamos que "fluyen" dependiendo de la anchura de la pantalla de nuestro navegador.</p>
+	<p>Representado esto graficamente seria algo asi: </p>
+	<img src="imagenes/caja1.PNG" alt="" title="Caja 1">
+	<img src="imagenes/caja2.PNG" alt="" title="Caja 2">
+
+	<h4>NOTA:Es muy importante saber que tipo de elemento es cada etiqueta que usamos.</h4>
+
+
+
+
+</body>
+
+</html>
